@@ -100,6 +100,7 @@ img {
 
 .flex-nav-contact {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -108,7 +109,7 @@ img {
 }
 
 .nav-contact-item:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .header-logo {
@@ -145,6 +146,11 @@ img {
   color: var(--accent-color);
 }
 
+.nav-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .site-contact {
   padding: 32px 0;
   font-size: 14px;
@@ -152,6 +158,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .site-contact:hover,
