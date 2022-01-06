@@ -216,6 +216,16 @@ img {
 }
 
 /* advantages */
+.advantages-box {
+  padding: 20px 100px;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+}
 
 .advantages-list {
   display: flex;
