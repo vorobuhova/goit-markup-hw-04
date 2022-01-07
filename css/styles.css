@@ -227,14 +227,22 @@ img {
 
 /* advantages */
 .advantages-box {
-  padding: 20px 100px;
   margin-bottom: 30px;
 
   width: 270px;
   height: 120px;
 
-  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--team-bg-color);
   border-radius: 4px;
+}
+
+.advantages-icons {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-list {
@@ -261,11 +269,6 @@ img {
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-}
-
-.advantages-icons {
-  width: 70px;
-  height: 70px;
 }
 
 /* wedo */
