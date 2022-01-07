@@ -467,6 +467,12 @@ img {
     margin-left: 70px;
 }
 
+.footer-socials-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-socials-title {
     font-weight: 700;
     font-size: 14px;
