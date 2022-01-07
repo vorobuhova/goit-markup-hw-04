@@ -9,6 +9,7 @@
     --temporary-bg-color: #2f303a;
     --button-bg-color: #f5f4fa;
     --card-set-gap: 30px;
+    --social-links: #afb1b8;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 
-/* Утиилиты */
+/* ---------------------Утиилиты--------------------- */
 
 h1,
 h2,
@@ -70,7 +71,7 @@ img {
 }
 
 
-/* Section */
+/* --------------------- Section--------------------- */
 
 .section {
     padding-top: 94px;
@@ -85,7 +86,7 @@ img {
 }
 
 
-/* стилизация Header] */
+/* --------------------- Header]--------------------- */
 
 .header-border {
     border-bottom: 1px solid #ececec;
@@ -112,7 +113,7 @@ img {
 }
 
 .nav-contact-item:not(:first-child) {
-    margin-left: 30px;
+    margin-left: var(--card-set-gap);
 }
 
 .header-logo {
@@ -172,7 +173,7 @@ img {
 }
 
 
-/* стилизация Hero */
+/* ---------------------  Hero--------------------- */
 
 .hero {
     padding-top: 200px;
@@ -184,7 +185,7 @@ img {
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     background-size: cover;
     background-color: var(--temporary-bg-color);
 }
@@ -201,7 +202,7 @@ img {
 }
 
 
-/* button */
+/* --------------------- button--------------------- */
 
 .pointer {
     cursor: pointer;
@@ -230,10 +231,10 @@ img {
 }
 
 
-/* advantages */
+/* --------------------- advantages---------------------*/
 
 .advantages-box {
-    margin-bottom: 30px;
+    margin-bottom: var(--card-set-gap);
     width: 270px;
     height: 120px;
     display: flex;
@@ -275,7 +276,7 @@ img {
 }
 
 
-/* wedo */
+/* --------------------- wedo--------------------- */
 
 .wedo {
     padding-top: 0;
@@ -321,8 +322,7 @@ img {
 }
 
 .team-item-text {
-    padding-top: var(--card-set-gap);
-    padding-bottom: var(--card-set-gap);
+    padding: 30px 32px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -344,21 +344,72 @@ img {
     text-align: center;
 }
 
-.team-icons {
-    width: 20px;
-    height: 20px;
-}
-
-.social-network {
+.team-social-list {
     display: flex;
+    justify-content: space-between;
 }
 
-.social-network-list {}
+.team-social-link {
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--social-links);
+}
 
-.social-network-link {}
+.team-social-link:hover,
+.team-social-link:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.team-icon {
+    fill: currentColor;
+}
 
 
-/* footer */
+/* --------------------- clients--------------------- */
+
+.clients-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--social-links);
+    border-radius: 4px;
+    color: var(--social-links);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.clients-logo {
+    width: 186px;
+    height: 60px;
+    fill: currentColor;
+}
+
+
+/* ---------------------footer--------------------- */
 
 .footer-logo {
     display: block;
@@ -410,11 +461,23 @@ img {
     color: var(--accent-color);
 }
 
+.footer-socials {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
 
-/* разметка Портфолищ */
+.footer-socials-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+}
 
 
-/* основные кнопки навигации */
+/* --------------------- Портфолищ--------------------- */
 
 .portfolio-button {
     display: flex;
@@ -452,7 +515,7 @@ img {
 }
 
 
-/* оформление списка работ */
+/* ---------------------оформление списка работ--------------------- */
 
 .works-item-bottom {
     padding: 20px 24px;
